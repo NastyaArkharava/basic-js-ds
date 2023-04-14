@@ -131,8 +131,16 @@ class BinarySearchTree {
   }
 
   max() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+    if (!this.rootOfTree) {
+      return null;
+    }
+
+    let node = this.rootOfTree;
+    while (node.right) {
+      node = node.right;
+    }
+
+    return node.data;
   }
 }
 
