@@ -23,7 +23,7 @@ class Queue {
     return this.top;
   }
 
-  enqueue(/* value */) {
+  enqueue(value) {
     let node = new ListNode(value);
 
     if (this.top) {
