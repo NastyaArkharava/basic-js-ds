@@ -118,7 +118,7 @@ class BinarySearchTree {
   }
 
   min() {
-    if (!this.root) {
+    if (!this.rootOfTree) {
       return null;
     }
 
